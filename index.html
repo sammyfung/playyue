@@ -1,0 +1,20 @@
+<html>
+<script>
+function play(){
+  var pronoun = document.getElementById("pronoun").value;
+  var audio = new Audio(`https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/${pronoun}.wav`);
+//audio.playbackRate = 0.8; 
+audio.play();
+}
+</script>
+<h1>粵語讀音</h1>
+<hr />
+<p>1. 先搜尋該字的音節：<a href="https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/">（中大）粵語審音配詞字庫</a></p>
+<p>
+2. 然後輸入音節：
+<input id='pronoun' placeholder='輸入音節 eg. gong2 港'>
+<button onclick="play()">發音</button>
+</p>
+<hr />
+<p></p>
+</html>
